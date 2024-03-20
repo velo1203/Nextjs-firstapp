@@ -21,7 +21,7 @@ export default async function Page({
     return (
         <div>
             <Suspense fallback={<h1>Loading...</h1>}>
-                <MovieInfo id={id} />
+                {JSON.stringify(movie)}
             </Suspense>
         </div>
     );
